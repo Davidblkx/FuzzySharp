@@ -39,8 +39,14 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithm\JaroDistance.cs" />
+    <Compile Include="Algorithm\JaroWinklerDistance.cs" />
+    <Compile Include="Algorithm\LevenshteinDistance.cs" />
     <Compile Include="Extensions.cs" />
-    <Compile Include="HammingDistance.cs" />
+    <Compile Include="Types\FuzzyAlgorithmType.cs" />
+    <Compile Include="Algorithm\HammingDistance.cs" />
+    <Compile Include="Types\IFuzzyMatchAlgorithm.cs" />
+    <Compile Include="Algorithm\JaccardIndex.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
